@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {
+    --bg-color: #F8F9FA;
+    --text-color: #2C3333;
+    --accent-color: #0E8388;
+    --light-grey: #e9ecef;
+    --grey: #212529;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid var(--accent-color);
+    position: absolute 0;
+    min-width: 100%;
+}
+
+.icon {
+    margin: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.navbar {
+    position: absolute;
+    right: 0%;
+    top: 3.9rem;
+    background-color: var(--accent-color);
+    width: 50%;
+    height: 40%;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.navbar__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.5rem;
+    gap: 2.5rem;
+}
+
+nav a {
+    color: var(--bg-color);
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+nav a:hover {
+    font-size: 1.8rem;
+}
+
+.active {
+    color: var(--grey);
+}
+
+.pag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    margin: 1.5rem 1rem;
+
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+strong {
+    color: var(--accent-color);
+}
+
+.subtitle {
+    margin: 1rem 0;
+    font-weight: 500;
+
+}
+
+.buttons {
+    color: var(--bg-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background: var(--accent-color);
+    font-weight: 500;
+}
+
+.rodape {
+    min-width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: var(--light-grey);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    align-items: center;
+    border-right: 1px solid var(--text-color);
+    flex-basis: 45%;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.5rem;
+    flex-basis: 50%;
+    padding: 8px;
+}
+
+.location {
+    color: var(--text-color);
+}
+
