@@ -1,8 +1,9 @@
 const menuButton = document.getElementById('menuButton');
 const menu = document.getElementById('navbar');
+const campoSenha = document.getElementById('senha')
+const buttonShowMePassword = document.getElementById('shomeMePassword')
 
 menuButton.addEventListener('click', () => {
-    const novoCaminho = 'assets/close.svg'
     if (menu.classList.contains('hidden')) {
         menu.classList.remove('hidden');
         menuButton.src = 'assets/close.svg';
@@ -11,3 +12,13 @@ menuButton.addEventListener('click', () => {
         menuButton.src = 'assets/menu_icon.svg';
     }
 });
+
+buttonShowMePassword.addEventListener('click', () => {
+    if (campoSenha.type === 'password') {
+        campoSenha.type = 'text';
+        buttonShowMePassword.src = 'assets/hidden_password.svg'
+    } else {
+        campoSenha.type = 'password';
+        buttonShowMePassword.src = 'assets/show_me_password.svg'
+    }
+})

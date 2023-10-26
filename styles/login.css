@@ -24,6 +24,10 @@
     font-weight: 600;
 }
 
+.email {
+    padding-right: 2rem;
+}
+
 .option__password {
     display: flex;
     align-items: center;
