@@ -1,0 +1,62 @@
+.input-box {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px;
+    background-color: var(--light-grey);
+    border-radius: 8px;
+    margin: 1rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.input-box input {
+    background-color: transparent;
+    border: transparent;
+    outline: none;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.input-box input::placeholder {
+    background-color: var(--light-grey);
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.option__password {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 16px;
+}
+
+.option__password__checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.entrar {
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: var(--bg-color);
+    font-weight: 600;
+    background-color: var(--accent-color);
+    border: none;
+}
+
+.option__text {
+    color: var(--text-color);
+    font-size: 0.5rem;
+    font-weight: 600;
+}
+
+.link {
+    color: var(--accent-color);
+}
+
+.destaque {
+    font-size: 1rem;
+}
+
